@@ -1,0 +1,519 @@
+/* Estilos inline para emoji */
+img.wp-smiley, img.emoji {
+    display: inline !important;
+    border: none !important;
+    box-shadow: none !important;
+    height: 1em !important;
+    width: 1em !important;
+    margin: 0 0.07em !important;
+    vertical-align: -0.1em !important;
+    background: none !important;
+    padding: 0 !important;
+}
+
+/* Blocos do WordPress */
+.wp-block-button__link {
+    color: #fff;
+    background-color: #32373c;
+    border-radius: 9999px;
+    box-shadow: none;
+    text-decoration: none;
+    padding: calc(.667em + 2px) calc(1.333em + 2px);
+    font-size: 1.125em;
+}
+
+.wp-block-file__button {
+    background: #32373c;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Estilos globais */
+:root {
+    --wp--preset--aspect-ratio--square: 1;
+    --wp--preset--aspect-ratio--4-3: 4/3;
+    --wp--preset--aspect-ratio--3-4: 3/4;
+    --wp--preset--aspect-ratio--3-2: 3/2;
+    --wp--preset--aspect-ratio--2-3: 2/3;
+    --wp--preset--aspect-ratio--16-9: 16/9;
+    --wp--preset--aspect-ratio--9-16: 9/16;
+    --wp--preset--color--black: #000000;
+    --wp--preset--color--cyan-bluish-gray: #abb8c3;
+    /* ... outras variáveis */
+}
+
+/* Layout e responsividade */
+:where(.is-layout-flex) {
+    gap: 0.5em;
+}
+
+:where(.is-layout-grid) {
+    gap: 0.5em;
+}
+
+/* Estilos para lazy loading e background */
+.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+    background-image: none !important;
+}
+
+@media screen and (max-height: 1024px) {
+    .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+    .e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+        background-image: none !important;
+    }
+}
+
+@media screen and (max-height: 640px) {
+    .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+    .e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+        background-image: none !important;
+    }
+}
+
+/* Configurações de pesquisa */
+div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label {
+    font-size: 0px !important;
+    color: rgba(0, 0, 0, 0);
+}
+
+div[id*='ajaxsearchlitesettings'].searchsettings .asl_option_inner label:after {
+    font-size: 11px !important;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+.asl_w_container {
+    width: 100%;
+    margin: 0;
+    min-width: 200px;
+}
+
+div[id*='ajaxsearchlite'].asl_m {
+    width: 100%;
+}
+
+div[id*='ajaxsearchliteres'].wpdreams_asl_results div.resdrg span.highlighted {
+    font-weight: bold;
+    color: rgba(217, 49, 43, 1);
+    background-color: rgba(238, 238, 238, 1);
+}
+
+div[id*='ajaxsearchliteres'].wpdreams_asl_results .results img.asl_image {
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+}
+
+div.asl_r .results {
+    max-height: none;
+}
+
+.asl_m .probox svg {
+    fill: rgba(67, 181, 173, 1) !important;
+}
+
+.asl_m .probox .innericon {
+    background-color: rgba(255, 255, 255, 1) !important;
+    background-image: none !important;
+}
+
+div.asl_m.asl_w {
+    border: 0 solid rgb(0, 0, 0) !important;
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+
+div.asl_m.asl_w .probox {
+    border: none !important;
+}
+
+div.asl_r.asl_w.vertical .results .item::after {
+    display: block;
+    position: absolute;
+    bottom: 0;
+    content: '';
+    height: 1px;
+    width: 100%;
+    background: #D8D8D8;
+}
+
+div.asl_r.asl_w.vertical .results .item.asl_last_item::after {
+    display: none;
+}
+
+/* Estilos para a Lightbox */
+.lg-backdrop {
+    background-color: rgba(0, 0, 0, 0.6) !important;
+}
+
+.lg-toolbar,
+.lg-dropdown {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.lg-dropdown:after {
+    border-bottom-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.lg-sub-html {
+    background-color: rgba(0, 0, 0, 0.8) !important;
+}
+
+.lg-thumb-outer,
+.lg-progress-bar {
+    background-color: #444444 !important;
+}
+
+.lg-progress {
+    background-color: #a90707 !important;
+}
+
+.lg-icon {
+    color: #efefef !important;
+    font-size: 20px !important;
+    background-color: transparent !important;
+}
+
+.lg-icon.lg-toogle-thumb {
+    font-size: 24px !important;
+}
+
+.lg-icon:hover,
+.lg-dropdown-text:hover {
+    color: #ffffff !important;
+}
+
+.lg-sub-html,
+.lg-dropdown-text {
+    color: #efefef !important;
+    font-size: 14px !important;
+}
+
+#lg-counter {
+    color: #efefef !important;
+    font-size: 14px !important;
+    opacity: 0.9;
+}
+
+.lg-prev,
+.lg-next {
+    font-size: 35px !important;
+}
+
+.lg-thumb-outer {
+    padding: 0 10px;
+}
+
+.lg-thumb-item {
+    border-radius: 0 !important;
+    border: none !important;
+    opacity: 0.5;
+}
+
+.lg-thumb-item.active {
+    opacity: 1;
+}
+
+/* Container Geral */
+.elementor-element {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.e-con-boxed {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* Estilo do Logo */
+.wpr-logo-image img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Estilos da Barra de Busca */
+.probox {
+    display: flex;
+    align-items: center;
+}
+
+.proinput input.orig {
+    width: 200px;
+    padding: 8px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.promagnifier .innericon {
+    background-color: #ffffff;
+}
+
+.promagnifier .innericon svg {
+    width: 22px;
+    height: 22px;
+}
+
+/* Outras Estilizações */
+.lg-backdrop {
+    background-color: rgba(0,0,0,0.6);
+}
+
+/* Loader */
+.asl_loader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.asl_loader-inner.asl_simple-circle {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #ccc;
+}
+
+/* Botão de Fechar */
+.proclose svg {
+    fill: #333;
+    cursor: pointer;
+}
+
+/* Container de Dados Oculto */
+.asl_data_container {
+    display: none !important;
+}
+
+/* Resultados */
+.wpdreams_asl_results {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.results {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.resdrg {
+    width: 100%;
+}
+
+/* Formulário de Configurações de Busca */
+.searchsettings {
+    display: flex;
+    flex-direction: column;
+}
+
+.asl_sett_scroll {
+    overflow-y: auto;
+    max-height: 200px;
+}
+
+.asl_option {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+    cursor: pointer;
+}
+
+.asl_option_inner {
+    display: flex;
+    align-items: center;
+}
+
+.asl_option_checkbox {
+    width: 15px;
+    height: 15px;
+    border: 1px solid #ccc;
+    margin-right: 5px;
+}
+
+.asl_option_label {
+    font-size: 14px;
+}
+
+.wpr-nav-menu-container {
+    margin-top: 20px;
+}
+
+.wpr-nav-menu {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+}
+
+.wpr-nav-menu li a {
+    text-decoration: none;
+    color: #333;
+}
+
+.wpr-logo-image img {
+    width: 150px;
+}
+
+.submit-btn {
+    width: 0;
+    height: 0;
+    visibility: hidden;
+}
+
+.promagnifier {
+    cursor: pointer;
+  }
+  
+  .innericon {
+    display: block;
+  }
+  
+  .proloading {
+    /* estilos do loader */
+  }
+  
+  .asl_loader-inner.asl_simple-circle {
+    /* estilos do círculo de carregamento */
+  }
+  
+  .proclose {
+    cursor: pointer;
+  }
+  
+  .asl_data_container {
+    display: none !important;
+  }
+  
+  .results {
+    /* estilos dos resultados */
+  }
+  
+  /* Outros estilos específicos podem ser adicionados aqui */
+
+  .asl_sett_scroll {
+    overflow-y: auto;
+}
+
+.asl_option {
+    padding: 5px;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.asl_option_inner {
+    display: flex;
+    align-items: center;
+}
+
+.asl_option_checkbox {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+.asl_option_label {
+    font-size: 14px;
+}
+
+.elementor-posts-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+}
+
+.elementor-post {
+    border: 1px solid #ddd;
+    padding: 10px;
+}
+
+.elementor-post__thumbnail img {
+    width: 100%;
+}
+
+.elementor-post__title a {
+    font-size: 18px;
+    color: #333;
+    text-decoration: none;
+}
+
+.elementor-post__read-more {
+    color: #0073e6;
+    text-decoration: none;
+}
+
+body {
+    font-family: Arial, sans-serif;
+}
+
+.elementor-posts-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.elementor-post {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    width: 300px;
+    box-sizing: border-box;
+}
+
+.elementor-post__thumbnail img {
+    width: 100%;
+    height: auto;
+}
+
+.elementor-post__title a {
+    color: #333;
+    text-decoration: none;
+    font-size: 1.25rem;
+}
+
+.elementor-post__meta-data {
+    font-size: 0.875rem;
+    color: #777;
+}
+
+.elementor-post__read-more {
+    display: inline-block;
+    margin-top: 1rem;
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.footer {
+    margin-top: 2rem;
+    padding: 1rem;
+    background-color: #f8f9fa;
+    text-align: center;
+}
+
+.footer-heading {
+    margin: 0.5rem 0;
+}
+
+.footer-links {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-links li {
+    display: inline;
+    margin: 0 1rem;
+}
+
+.footer-links a {
+    text-decoration: none;
+    color: #007BFF;
+}
+
+.footer-copy {
+    font-size: 0.875rem;
+    color: #333;
+}
+
+  
